@@ -1,1 +1,16 @@
 # new code
+project: "Code Alchemist"
+modes:
+  - name: CLI
+    description: "Generate automation scripts from plain English."
+    entities:
+      - Script
+  - name: Art
+    description: "Generate visual art from YAML or English."
+    entities:
+      - Artwork
+api:
+  - resource: /generate-script
+    methods: [POST]
+  - resource: /generate-art
+    methods: [POST]
